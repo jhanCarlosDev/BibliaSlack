@@ -6,6 +6,8 @@ import os
 load_dotenv()
 
 # Obtiene las claves API desde las variables de entorno
-Api_key = os.getenv("Api_key")
+Api_key = os.getenv("Api_key") # Api  de la Biblia 
+urlSlack = os.getenv("UrlSlack") #URL de Webhook
+
 
 
