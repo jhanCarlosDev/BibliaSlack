@@ -1,21 +1,25 @@
 import requests
 import re
 from deep_translator import GoogleTranslator
+
 from Api import Api_key
 from  citasBiblica import citas_biblicas_aleatorias
 
 url = f"https://api.esv.org/v3/passage/text/?q={citas_biblicas_aleatorias}"
 
-                                    
 headers = {
   "Authorization": f"{Api_key}"
 }
 
 pasajeBiblico_Traducido = ""
 
+
 Pasajes_de_respuesta_a_fallas = """
+  Juan 3:16
+
   Porque de tal manera amó Dios al mundo, que ha dado a su Hijo unigénito,
   para que todo aquel que en él cree, no se pierda, mas tenga vida eterna.
+
   """
 
 try : 
